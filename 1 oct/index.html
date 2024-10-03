@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label style="vertical-align: top;" for="address">Address:</label>
+    <textarea id="address" rows="10" cols="40">
+    </textarea>
+    <br><br>
+    <label for="div">DIV:</label>
+    <select id="div" size="3" multiple>
+        <optgroup>
+            <option value="">Division A</option>
+            <option value="">Division B</option>
+            <option value="">Division C</option>
+            <option value="" selected>Division D</option>
+        </optgroup>
+        <optgroup>
+            <option value="">Division A</option>
+            <option value="">Division B</option>
+            <option value="">Division C</option>
+            <option value="" selected>Division D</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <form>
+        <br /> <br />
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="12per">Percentage of 12th:</label>
+            <input type="text" pattern="^[0-9]+%$" placeholder="e.g.99%">
+            <br><br>
+            <label for="12per">Percentage of 10th:</label>
+            <input type="text" pattern="^[0-9]+%$" placeholder="e.g.99%">
+            <br><br> 
+        </fieldset>
+        <br><br>
+        <label for="list">Food Item </label>
+        <input list="food">
+        <datalist id="food">
+            <option>Vadpav</option>
+            <option>panipuri</option>
+            <option>dosa</option>
+            <option>pulwa</option>
+
+
+        </datalist>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
